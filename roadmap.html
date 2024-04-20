@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Generator</title>
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roadmap Generator</h1> 
+        <form id="roadmap-form">
+            <div class="form-group">
+                <label for="task">Task:</label>
+                <input type="radio" id="12th(commerce)" name="domain" value="12th(commerce)" checked>
+                <label for="12th(commerce)">12th(commerce)</label>
+            
+                <input type="radio" id="12th(science-PCM)" name="domain" value="12th(science-PCM)"> 
+                <label for="12th(science-PCM)">12th(science-PCM)</label>
+            
+                <input type="radio" id="12th(Science-PCMB)" name="domain" value="12th(Science-PCMB)"> 
+                <label for="12th(Science-PCMB)">12th(Science-PCMB)</label>
+                
+                <input type="radio" id="12th(science-PCB)" name="domain" value="12th(science-PCB)">
+                <label for="12th(science-PCB)">12th(science-PCB)</label>
+               
+                <input type="radio" id="12th(arts)" name="domain" value="12th(arts)">
+                <label for="12th(arts)">12th(arts)</label>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required>
+            </div>
+            <button id="generate-btn" type="submit">Generate roadmap</button>
+        </form>
+        <div class="roadmap-container" id="roadmap"></div>
+    </div>
+    <div class="chat-container" id="chat-container">
+        
+        <p>Need help? <a href="https://chat.openai.com/">Chat with ChatGPT</a></p>
+    </div>
+    
+
+    <script src="./roadmap.js"></script>
+</body>
+</html>
